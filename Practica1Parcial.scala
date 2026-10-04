@@ -67,6 +67,7 @@ object Practica1Parcial{
     }
 
     //EJERCICIO 6
+    @tailrec
     def sumarDigitosPares(num: Int, acum: Int=0):  Int= {
         if num < 10 then {
             if num%2 == 0 then acum + num
@@ -80,6 +81,7 @@ object Practica1Parcial{
     }
 
     //EJERCICIO 7
+    @tailrec
     def contarMayuscula(pal: String, acum: Int=0): Int = {
         if pal== "" then acum
         else{
@@ -96,6 +98,7 @@ object Practica1Parcial{
     }
 
     //EJERCICIO 8
+    @tailrec
     def contarCambiosParidad(num: Int, acum: Int=0): Int = {
         if num<10 then acum
         else {
@@ -109,6 +112,7 @@ object Practica1Parcial{
     }
 
     //EJERCICIO 9
+    @tailrec
     def segundoMayorDigito(num: Int,mayor:Int=0, acum: Int=0,iguales: Boolean = true): Int = {
         if num<10 then {
             if iguales then -1
@@ -132,6 +136,7 @@ object Practica1Parcial{
     }
 
     //EJERICICIO 10 
+    @tailrec
     def rachaMaxima(pal: String,anterior: Char = ' ' ,mayor: Int=0, actual: Int=0): Int = {
         if pal == "" then 0
         else{
